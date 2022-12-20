@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  border: 2px solid black;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 255px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header  header"
+    "main main"
+    "footer footer";
+}
+header,
+main,
+footer {
+  border: 2px solid black;
+  padding: 2px;
+  margin: 5px;
+  width: 80%;
+}
+
+header {
+  grid-area: header;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+nav {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+  padding-bottom: 5px;
+}
+#button1,
+#button2{
+    background-color: cadetblue;
+    border: 2px solid grey;
+    color: aliceblue;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+#button1:hover{
+    background-color: darkolivegreen;
+    border: 2px solid rgb(74, 134, 22);
+    color: rgb(2, 2, 2);
+}
+
+#button2:hover{
+    background-color: rgba(0, 0, 139, 0.566);
+    border: 2px solid rgb(22, 50, 134);
+    color: rgb(2, 2, 2);
+}
+
+main {
+  grid-area: main;
+}
+
+#cerrar{
+    background:none;
+    border:none;
+    position: absolute;
+    font-size: large;
+    color: red;
+    left: 75%;
+}
+section{
+    border: 2px solid black;
+    padding: 2px;
+    margin: 5px;
+    display: none;
+}
+#is,
+#rg{
+    display: none;
+    text-align: center;
+}
+
+.form-check{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
