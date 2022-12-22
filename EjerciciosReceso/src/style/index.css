@@ -1,8 +1,10 @@
 * {
   box-sizing: border-box;
 }
+
 body {
-  border: 2px solid black;
+  background-color: #7267f055;
+  margin: 16px;
   display: grid;
   place-items: center;
   grid-template-columns: 255px;
@@ -12,10 +14,10 @@ body {
     "main main"
     "footer footer";
 }
+
 header,
 main,
 footer {
-  border: 2px solid black;
   padding: 2px;
   margin: 5px;
   width: 80%;
@@ -30,57 +32,73 @@ header {
 nav {
   display: grid;
   place-items: center;
-  gap: 20px;
+  display: inline-block;
   padding-bottom: 5px;
 }
 #button1,
-#button2{
-    background-color: cadetblue;
-    border: 2px solid grey;
-    color: aliceblue;
-    transform: scale(1);
-    cursor: pointer;
+#button2 {
+  background-color: rgb(66, 65, 65);
+  border: 2px solid rgb(45, 102, 155);
+  color: aliceblue;
+  transform: scale(1);
+  cursor: pointer;
 }
 
-#button1:hover{
-    background-color: darkolivegreen;
-    border: 2px solid rgb(74, 134, 22);
-    color: rgb(2, 2, 2);
+#button1:hover {
+  background-color: darkolivegreen;
+  border: 2px solid rgb(74, 134, 22);
+  color: rgb(2, 2, 2);
 }
 
-#button2:hover{
-    background-color: rgba(0, 0, 139, 0.566);
-    border: 2px solid rgb(22, 50, 134);
-    color: rgb(2, 2, 2);
+#button2:hover {
+  background-color: rgba(0, 0, 139, 0.566);
+  border: 2px solid rgb(22, 50, 134);
+  color: rgb(2, 2, 2);
 }
 
 main {
   grid-area: main;
+  width: 90%;
 }
 
-#cerrar{
-    background:none;
-    border:none;
-    position: absolute;
-    font-size: large;
-    color: red;
-    left: 75%;
+#cerrar {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: large;
+  color: red;
+  left: 75%;
 }
-section{
-    border: 2px solid black;
-    padding: 2px;
-    margin: 5px;
-    display: none;
+
+section {
+  border: 2px solid black;
+  padding: 2px;
+  margin: 5px;
+  display: flex;
 }
+
 #is,
-#rg{
-    display: none;
-    text-align: center;
+#rg {
+  display: none;
+  text-align: center;
 }
 
-.form-check{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+.form-check {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
+footer {
+  grid-area: footer;
+}
+
+.diseño1 {
+  position:absolute;
+  z-index: -2;
+  top: 0;
+  background-color: #7267f0;
+  opacity: 0.4;
+  width: 23.4375rem;
+  height: 30%;
+}
