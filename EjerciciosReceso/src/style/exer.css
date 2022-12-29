@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+  display: grid;
+  place-content: center;
+  grid-template-columns: 255px 255px 255px 255px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+}
+
+header,
+main,
+footer {
+  display: grid;
+  place-content: center;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+section {
+  display: grid;
+  place-content: center;
+  gap: 10px;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+article {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.uno {
+  grid-column: 1/5;
+}
+
+.dos {
+  display: grid;
+  place-content: center;
+  gap: 15px;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: auto;
+  grid-column: 1/5;
+  padding: 5px;
+}
+
+.dos article {
+  margin-top: 5px;
+}
+
+.exp {
+  border: 2px solid saddlebrown;
+}
+.operaciones {
+  border: 2px solid saddlebrown;
+}
+.num {
+  grid-column: 1/5;
+}
+.veinte {
+  grid-column: 2;
+}
+.resultado {
+  border: 5px solid green;
+  background-color: lightgreen;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.sub {
+  position: absolute;
+  top: 15rem;
+  right: 8rem;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 960px){
+  body {
+    background-color: rgb(230, 185, 173);
+    min-width: auto;
+    max-width: auto;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 255px 255px 255px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "footer footer footer";
+  }
+  header {
+    grid-area: header;
+    min-width: auto;
+    max-width: auto;
+  }
+  main {
+    grid-area: main;
+    min-width: auto;
+    max-width: auto;
+  }
+
+  section {
+    min-height: auto;
+    max-width: auto;
+    display: grid;
+    place-content: center;
+    gap: 10px;
+    grid-template-columns: 250px;
+    grid-template-rows: auto;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .uno {
+    grid-column: 1/5;
+  }
+
+  .dos {
+    min-width: auto;
+    max-width: auto;
+    display: grid;
+    place-content: center;
+    gap: 10px;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: auto;
+    grid-column: 1/5;
+    padding: 5px;
+  }
+
+  .dos article {
+    margin-top: 5px;
+  }
+
+  .exp {
+    border: 2px solid rgb(71, 139, 19);
+  }
+  .operaciones {
+    border: 2px solid rgb(85, 139, 19);
+  }
+  .num {
+    grid-column: 1/5;
+  }
+  .veinte {
+    grid-column: 2;
+  }
+
+  footer {
+    grid-area: footer;
+    min-width: auto;
+    max-width: auto;
+    background-color: rgb(137, 107, 107);
+  }
+}
