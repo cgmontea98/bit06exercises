@@ -21,104 +21,116 @@
     <!--Propio-->
     <link rel="stylesheet" href="/EjerciciosReceso/src/style/index.css" />
   </head>
-  <body>
-    <div class="diseño1 fondo1"></div>
-    <header>
-      <h1>Bienvenid@</h1>
-      <p>
-        Aquí podrá realizar sus ejercicios de manera sencilla y práctica. Antes
-        de comenzar, por favor:
-      </p>
-      <nav>
-        <button id="button1">Inicie Sesión</button>
-        <button id="button2">Registrese</button>
+  <body class="container my-5 py-5 text-center">
+    <div class="container">
+      <header class="row justify-content-center">
+        <h1>Bienvenid@</h1>
+        <p>
+          Aquí podrá realizar sus ejercicios de manera sencilla y práctica.
+          Antes de comenzar, por favor:
+        </p>
+      </header>
+      <nav class="container my-2 py-2">
+        <div class="row justify-content-center">
+          <button id="button1" class="col-xl-2 col-lg-2 col-md-3 col-sm-10 mx-4  my-2 border border-success border border-3 rounded-pill">Inicie Sesión</button>
+          <button id="button2" class="col-xl-2 col-lg-2 col-md-3 col-sm-10 mx-4 my-2  border border-info border border-3 rounded-pill">Registrese</button>
+        </div>
       </nav>
-    </header>
 
-    <main>
-      <!--L.I-->
-      <section id="is">
-        <h2>Iniciar Sesión</h2>
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label"
-              >Correo Electrónico</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label"
-              >Contraseña</label
-            >
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-            />
-          </div>
-          <div class="mb-3 form-check">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="exampleCheck1"
-            />
-            <label class="form-check-label" for="exampleCheck1">Soy yo</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Ingresar</button>
-        </form>
-      </section>
-
-      <!--Rg-->
-      <section id="rg">
-        <h2>Registro</h2>
-        <form class="row">
-          <div class="col-md-12">
-            <label for="inputEmail4" class="form-label"
-              >Correo Electrónico</label
-            >
-            <input type="email" class="form-control" id="inputEmail4" />
-          </div>
-          <div class="col-md-12">
-            <label for="inputPassword4" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="inputPassword4" />
-          </div>
-          <div class="col-md-12">
-            <label for="inputAddress" class="form-label">Dirección</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputAddress"
-              placeholder="1234 Main St"
-            />
-          </div>
-          <div class="col-md-12">
-            <label for="inputState" class="form-label">Ciudad</label>
-            <select id="inputState" class="form-select">
-              <option>Escoge una opción</option>
-              <option>Bogotá</option>
-              <option>Cali</option>
-              <option>Barranquilla</option>
-              <option>Medellin</option>
-              <option>Cartagena</option>
-            </select>
-          </div>
-          <div class="col-12">
-            <div class="form-check mover">
-              <input class="form-check-input" type="checkbox" id="gridCheck" />
-              <label class="form-check-label" for="gridCheck"> ¡Listo! </label>
-              <button type="submit" class="btn btn-primary">Ingresar</button>
+      <main class="container py-2 my-2">
+        <!--L.I-->
+        <section class="row border border-3 rounded-3 border-success p-4  my-4" id="is">
+          <h2>Iniciar Sesión</h2>
+          <form class="col-md-6 col-12">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Correo Electrónico</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
             </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Contraseña</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <div class="form-check d-inline-flex">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label mx-3" for="exampleCheck1">Soy yo</label>
+            </div>
+            <button type="submit" class="btn btn-success">Ingresar</button>
+          </form>
+          <div class="div">
+            <div class="div--ani"></div>
           </div>
-        </form>
-      </section>
-    </main>
+        </section>
 
-    <footer></footer>
+        <!--Rg-->
+        <section class="row border border-3 rounded-3 border-info p-4" id="rg">
+          <h2 class="py-2">Registro</h2>
+          <form class="row">
+            <div class="col-md-6 col-12">
+              <label for="inputEmail4" class="form-label"
+                >Correo Electrónico</label
+              >
+              <input type="email" class="form-control" id="inputEmail4" />
+            </div>
+            <div class="col-md-6 col-12">
+              <label for="inputPassword4" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="inputPassword4" />
+            </div>
+            <div class="col-md-6 col-12">
+              <label for="inputAddress" class="form-label">Dirección</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="1234 Main St"
+              />
+            </div>
+            <div class="col-md-6 col-12">
+              <label for="inputState" class="form-label">Ciudad</label>
+              <select id="inputState" class="form-select">
+                <option>Escoge una opción</option>
+                <option>Bogotá</option>
+                <option>Cali</option>
+                <option>Barranquilla</option>
+                <option>Medellin</option>
+                <option>Cartagena</option>
+              </select>
+            </div>
+            <div class="">
+              <div class="form-check p-4 d-flex d-flex justify-content-center align-self-center gap-3 gap-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
+                <label class="form-check-label" for="gridCheck">
+                  ¡Listo!
+                </label>
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer></footer>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

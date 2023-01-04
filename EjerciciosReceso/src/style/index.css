@@ -1,46 +1,20 @@
 * {
-  box-sizing: border-box;
-  margin: 5px;
   font-family: "Montserrat", sans-serif;
 }
-
-body {
+.div {
   display: grid;
   place-content: center;
-  place-self: center;
-  text-align: center;
-  grid-template-columns: repeat(4, 2fr);
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
+  margin: 10px;
+  background-color: aqua;
+  border: 2px solid black;
+  width: 300px;
+  height: 200px;
 }
-
-header,
-main,
-footer{
+.div--ani {
   display: grid;
   place-content: center;
-  place-self: center;
+  background-color: aqua;
   border: 2px solid black;
-}
-
-header{
-  grid-area: header;
-}
-main{
-  grid-area: main ;
-}
-
-#is,
-#rg{
-  border: 2px solid black;
-}
-
-#rg{
-  
-}
-footer{
-  grid-area: footer;
+  width: 100px;
+  height: 100px;
 }
