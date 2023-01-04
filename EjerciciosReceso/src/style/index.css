@@ -1,100 +1,46 @@
 * {
   box-sizing: border-box;
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-  background-color: #7267f055;
-  margin: 16px;
   display: grid;
-  place-items: center;
-  grid-template-columns: 255px;
+  place-content: center;
+  place-self: center;
+  text-align: center;
+  grid-template-columns: repeat(4, 2fr);
   grid-template-rows: auto;
   grid-template-areas:
-    "header header"
-    "main main"
-    "footer footer";
+    "header header header"
+    "main main main"
+    "footer footer footer";
 }
 
 header,
 main,
-footer {
-  padding: 2px;
-  margin: 5px;
-}
-
-header {
-  grid-area: header;
-  color: rgb(0, 0, 0);
-  text-align: center;
-}
-nav {
+footer{
   display: grid;
-  place-items: center;
-  display: inline-block;
-}
-
-#button1,
-#button2 {
-  background-color: rgb(66, 65, 65);
-  border: 2px solid rgb(45, 102, 155);
-  color: aliceblue;
-  transform: scale(1);
-  cursor: pointer;
-}
-
-#button1:hover {
-  background-color: darkolivegreen;
-  border: 2px solid rgb(74, 134, 22);
-  color: rgb(2, 2, 2);
-}
-
-#button2:hover {
-  background-color: rgba(0, 0, 139, 0.566);
-  border: 2px solid rgb(22, 50, 134);
-  color: rgb(2, 2, 2);
-}
-
-main {
-  grid-area: main;
-}
-
-#cerrar {
-  background: none;
-  border: none;
-  position: absolute;
-  font-size: large;
-  color: red;
-  left: 75%;
-}
-
-section {
+  place-content: center;
+  place-self: center;
   border: 2px solid black;
-  padding: 2px;
-  margin: 5px;
+}
+
+header{
+  grid-area: header;
+}
+main{
+  grid-area: main ;
 }
 
 #is,
-#rg {
-  display: none;
-  text-align: center;
+#rg{
+  border: 2px solid black;
 }
 
-.form-check {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+#rg{
+  
 }
-
-footer {
+footer{
   grid-area: footer;
-}
-
-.diseño1 {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  background-color: #7267f0;
-  opacity: 0.3;
-  width: 88rem;
-  height: 15%;
 }
