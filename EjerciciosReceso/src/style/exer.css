@@ -5,6 +5,7 @@
 }
 
 body {
+  background-image: url(/EjerciciosReceso/src/fondo\ pag\ web.png);
   width: 95%;
   max-width: 1440px;
   border-radius: 9px;
@@ -74,6 +75,12 @@ footer {
   padding: 5px;
 }
 
+div .resultado {
+  width: 50%;
+  background-color: rgba(165, 42, 42, 0.322);
+  color: blue;
+}
+
 @media screen and (min-width: 586px) and (max-width: 768px) {
   body {
     width: 98%;
@@ -135,6 +142,9 @@ footer {
     grid-column: 1/3;
   }
   .article--cajaR input {
+    display: grid;
+    place-content: center;
+    place-items: center;
     width: 80%;
   }
   .opb--srmd,
@@ -183,7 +193,7 @@ footer {
     grid-template-rows: auto;
     gap: 5px;
   }
-  
+
   .section__modifxl {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
@@ -194,7 +204,7 @@ footer {
     display: grid;
     place-content: center;
     place-items: center;
-   
+
     grid-template-columns: 170px 170px;
     grid-template-rows: auto;
   }

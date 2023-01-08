@@ -18,10 +18,9 @@
     <header>
       <h1>Ejercicios</h1>
       <p>
-        INSTRUCCIONES Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Ratione, quaerat dolore id omnis sapiente modi perferendis expedita
-        quidem perspiciatis, dolorum fugiat sint consequatur delectus fugit
-        provident, repudiandae necessitatibus iste incidunt!
+        INSTRUCCIONES: Para ver cada uno de los resultados o hacer alguna
+        operación en concreto es necesario que pases el mouse por encima de cada
+        botón, haga un o dos click...
       </p>
     </header>
 
@@ -31,12 +30,17 @@
         <article class="section__article article--uno">
           <h2>1. Coloca tus datos básicos: Nombre, Apellido, edad</h2>
           <form class="form">
-            <label for="nombe">Aquí va tu nombre </label>
-            <input type="text" name="nombre" placeholder="Ej: Alex" />
-            <label for="apellido">Aquí tu apellido</label>
-            <input type="text" name="apellido" placeholder="Ej: Ruiz" />
-            <label for="edad" class="edad">Y, tu edad</label>
-            <input type="number" name="edad" placeholder="Ej: 20" />
+            <label for="nom">Aquí va tu nombre </label>
+            <input type="text" id="nom" name="nombre" placeholder="Ej: Alex" />
+            <label for="ape">Aquí tu apellido</label>
+            <input
+              type="text"
+              id="ape"
+              name="apellido"
+              placeholder="Ej: Ruiz"
+            />
+            <label for="ed" class="edad">Y, tu edad</label>
+            <input type="number" id="ed" name="edad" placeholder="Ej: 20" />
             <button type="submit" id="listo">Listo</button>
           </form>
         </article>
@@ -72,22 +76,26 @@
                 <h2>2.5 Módulo de la división.</h2>
               </article>
             </div>
+
             <div class="opb__eje">
-            <form class="opb--hacer">
-              <input type="number" />
-              <select name="ope">
-                <option value="">Escoje una opción</option>
-                <option value="">+</option>
-                <option value="">-</option>
-                <option value="">*</option>
-                <option value="">/</option>
-                <option value="">%</option>
-              </select>
-              <input type="number" />
-              <label for="">El resultado es</label>
-              <input type="number" />
-            </form>
-          </div>
+              <form class="opb--hacer">
+                <label for="">Ingresa un numero</label>
+                <input type="number" id="num1" />
+
+                <label for="">Ingresa un numero</label>
+                <input type="number" id="num2" />
+
+                <label for="">Seleccióna un signo</label>
+                <button id="mas">+</button>
+                <button id="res">-</button>
+                <button id="mul">*</button>
+                <button id="vid">/</button>
+                <button id="mod">%</button>
+
+                <button id="resu">El resultado es</button>
+                <div id="resOb" readonly="readonly"></div>
+              </form>
+            </div>
           </div>
         </article>
 
@@ -97,7 +105,7 @@
           <button class="vmp">Ver más</button>
           <div class="article--cajaR">
             <label for="">Ingresa solo un números</label>
-            <input type="number" name="numO" id="" />
+            <input type="number" id="numO" />
           </div>
         </article>
 
@@ -110,17 +118,27 @@
               <label for=""
                 >El resultado de la operación seleccionada es:</label
               >
-              <input type="number" name="resultado" id="" />
+              <div
+                type="number"
+                class="resultado"
+                id="eje3"
+                readonly="readonly"
+              ></div>
             </div>
           </article>
-          <article class="section__article">
+          <article class="section_ _article">
             <h2>4. La mitad del número.</h2>
             <button class="vm4">Ver más</button>
             <div class="article--cajaR res--4">
               <label for=""
                 >El resultado de la operación seleccionada es:</label
               >
-              <input type="number" name="resultado" id="" />
+              <div
+                type="number"
+                class="resultado"
+                id="eje4"
+                readonly="readonly"
+              ></div>
             </div>
           </article>
           <article class="section__article">
@@ -130,7 +148,12 @@
               <label for=""
                 >El resultado de la operación seleccionada es:</label
               >
-              <input type="number" name="resultado" id="" />
+              <div
+                type="number"
+                class="resultado"
+                id="eje5"
+                readonly="readonly"
+              ></div>
             </div>
           </article>
           <article class="section__article">
@@ -140,7 +163,12 @@
               <label for=""
                 >El resultado de la operación seleccionada es:</label
               >
-              <input type="number" name="resultado" id="" />
+              <div
+                type="number"
+                class="resultado"
+                id="eje6"
+                readonly="readonly"
+              ></div>
             </div>
           </article>
           <article class="section__article">
@@ -150,7 +178,12 @@
               <label for=""
                 >El resultado de la operación seleccionada es:</label
               >
-              <input type="number" name="resultado" id="" />
+              <div
+                type="number"
+                class="resultado"
+                id="eje7"
+                readonly="readonly"
+              ></div>
             </div>
           </article>
           <article class="section__article">
@@ -160,7 +193,12 @@
               <label for=""
                 >El resultado de la operación seleccionada es:</label
               >
-              <input type="number" name="resultado" id="" />
+              <div
+                type="number"
+                class="resultado"
+                id="eje8"
+                readonly="readonly"
+              ></div>
             </div>
           </article>
           <article class="section__article">
@@ -170,7 +208,12 @@
               <label for=""
                 >El resultado de la operación seleccionada es:</label
               >
-              <input type="number" name="resultado" id="" />
+              <div
+                type="number"
+                class="resultado"
+                id="eje9"
+                readonly="readonly"
+              ></div>
             </div>
           </article>
           <article class="section__article">
@@ -180,7 +223,12 @@
               <label for=""
                 >El resultado de la operación seleccionada es:</label
               >
-              <input type="number" name="resultado" id="" />
+              <div
+                type="number"
+                class="resultado"
+                id="eje10"
+                readonly="readonly"
+              ></div>
             </div>
           </article>
           <article class="section__article">
@@ -190,7 +238,12 @@
               <label for=""
                 >El resultado de la operación seleccionada es:</label
               >
-              <input type="number" name="resultado" id="" />
+              <div
+                type="number"
+                class="resultado"
+                id="eje11"
+                readonly="readonly"
+              ></div>
             </div>
           </article>
           <article class="section__article">
@@ -200,7 +253,12 @@
               <label for=""
                 >El resultado de la operación seleccionada es:</label
               >
-              <input type="number" name="resultado" id="" />
+              <div
+                type="number"
+                class="resultado"
+                id="eje12"
+                readonly="readonly"
+              ></div>
             </div>
           </article>
           <article class="section__article">
@@ -210,7 +268,12 @@
               <label for=""
                 >El resultado de la operación seleccionada es:</label
               >
-              <input type="number" name="resultado" id="" />
+              <div
+                type="number"
+                class="resultado"
+                id="eje13"
+                readonly="readonly"
+              ></div>
             </div>
           </article>
           <article class="section__article">
@@ -220,7 +283,12 @@
               <label for=""
                 >El resultado de la operación seleccionada es:</label
               >
-              <input type="number" name="resultado" id="" />
+              <div
+                type="number"
+                class="resultado"
+                id="eje14"
+                readonly="readonly"
+              ></div>
             </div>
           </article>
           <article class="section__article">
@@ -230,7 +298,12 @@
               <label for=""
                 >El resultado de la operación seleccionada es:</label
               >
-              <input type="number" name="resultado" id="" />
+              <div
+                type="number"
+                class="resultado"
+                id="eje15"
+                readonly="readonly"
+              ></div>
             </div>
           </article>
           <article class="section__article">
@@ -240,7 +313,12 @@
               <label for=""
                 >El resultado de la operación seleccionada es:</label
               >
-              <input type="number" name="resultado" id="" />
+              <div
+                type="number"
+                class="resultado"
+                id="eje16"
+                readonly="readonly"
+              ></div>
             </div>
           </article>
           <article class="section__article article--total">
@@ -250,7 +328,12 @@
               <label for=""
                 >El resultado de la operación seleccionada es:</label
               >
-              <input type="number" name="resultado" id="" />
+              <div
+                type="number"
+                class="resultado"
+                id="eje17"
+                readonly="readonly"
+              ></div>
             </div>
           </article>
         </div>
