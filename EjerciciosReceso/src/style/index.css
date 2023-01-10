@@ -1,20 +1,25 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
-.div {
-  display: grid;
-  place-content: center;
-  margin: 10px;
-  background-color: aqua;
-  border: 2px solid black;
-  width: 300px;
-  height: 200px;
+body{
+  background-image: url(/EjerciciosReceso/src/img/fondo\ pag\ web.png);
 }
-.div--ani {
-  display: grid;
-  place-content: center;
+#is,
+#rg{
+  display: none;
+}
+
+
+.div__padre,
+.div--hijo,
+.div--nieto{
   background-color: aqua;
-  border: 2px solid black;
   width: 100px;
   height: 100px;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  float: right;
+  display: grid;
+  place-items: center;
 }

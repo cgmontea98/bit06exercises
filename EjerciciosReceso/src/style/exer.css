@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(/EjerciciosReceso/src/fondo\ pag\ web.png);
+  background-image: url(/EjerciciosReceso/src/img/fondo\ pag\ web.png);
   width: 95%;
   max-width: 1440px;
   border-radius: 9px;
@@ -76,7 +76,6 @@ footer {
 }
 
 div .resultado {
-  width: 50%;
   background-color: rgba(165, 42, 42, 0.322);
   color: blue;
 }
@@ -154,7 +153,7 @@ div .resultado {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) and (max-width: 2087px) {
   body {
     width: 99%;
     display: grid;

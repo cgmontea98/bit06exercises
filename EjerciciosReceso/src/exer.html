@@ -92,8 +92,8 @@
                 <button id="vid">/</button>
                 <button id="mod">%</button>
 
-                <button id="resu">El resultado es</button>
-                <div id="resOb" readonly="readonly"></div>
+                <span id="resu">El resultado es</span>
+                <div id="resOb" class="resultado" readonly="readonly"></div>
               </form>
             </div>
           </div>
@@ -235,15 +235,25 @@
             <h2>11. El doble del número & el doble del número más 4</h2>
             <button class="vm11">Ver más</button>
             <div class="article--cajaR res--11">
-              <label for=""
-                >El resultado de la operación seleccionada es:</label
-              >
-              <div
-                type="number"
-                class="resultado"
-                id="eje11"
-                readonly="readonly"
-              ></div>
+              <button id="db">DOBLE</button>
+              <button id="cd">CUADRUPLE</button>
+              <div>
+                <label for=""
+                  >El resultado de la operación seleccionada es:</label
+                >
+                <div
+                  type="number"
+                  class="resultado"
+                  id="eje11"
+                  readonly="readonly"
+                ></div>
+                <div
+                  type="number"
+                  class="resultado"
+                  id="eje11--1"
+                  readonly="readonly"
+                ></div>
+              </div>
             </div>
           </article>
           <article class="section__article">
@@ -322,11 +332,15 @@
             </div>
           </article>
           <article class="section__article article--total">
-            <h2>17. Cuál de los dos números es divisible por el segundo.</h2>
-            <button class="vm17">Ver más</button>
+            <h2>17. El primer número es divisible por el segundo.</h2>
+            <button class="mm">Mostrar más</button>
             <div class="article--cajaR res--17">
-              <label for=""
-                >El resultado de la operación seleccionada es:</label
+              <div>
+                <label>Ingresa otro número para validar</label>
+                <input type="number" id="numD" />
+              </div>
+              <button class="vm17"
+                >El resultado de la operación seleccionada es:</button
               >
               <div
                 type="number"
