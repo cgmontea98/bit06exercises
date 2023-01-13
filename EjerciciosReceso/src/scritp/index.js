@@ -20,12 +20,37 @@ const $btn2 = document.getElementById("button2");
 $btn2.addEventListener("click", () => {
   let $form2 = document.getElementById("rg");
   let dis = $form2.style.display;
-console.log(dis)
+  console.log(dis);
   if (dis === "none") {
     $form2.style.display = "block";
     $btn2.innerHTML = "Ocultar";
   } else {
     $form2.style.display = "none";
     $btn2.innerHTML = "Registro";
+  }
+});
+
+//Función de inicio de sesión
+
+const form = document.getElementById("formIS");
+let use = document.getElementById("exampleInputEmail1");
+let pas = document.getElementById("exampleInputPassword1");
+let check = document.getElementById("exampleCheck1");
+
+
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  //OBJ
+  const is = {
+    exampleInputEmail1: use.value,
+    exampleInputPassword1: pas.value,
+    exampleCheck1: check.checked,
+  };
+
+  if (!is.exampleInputEmail1 && !is.exampleInputPassword1 && !is.exampleCheck1) {
+    alert('no')
+  }else{
+    window.location.href = "./exer.html"
   }
 });

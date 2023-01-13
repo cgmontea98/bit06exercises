@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!--Propio-->
     <link rel="stylesheet" href="/EjerciciosReceso/src/style/index.css" />
   </head>
@@ -54,10 +55,12 @@
           id="is"
         >
           <h2>Iniciar Sesión</h2>
-          <form class="col-md-6 col-6">
+          <form id="formIS" class="col-md-6 col-6">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label"
-                >Correo Electrónico</label
+                ><span class="material-symbols-outlined">
+                  account_circle
+                  </span></label
               >
               <input
                 type="email"
@@ -68,7 +71,9 @@
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label"
-                >Contraseña</label
+                ><span class="material-symbols-outlined">
+                  key
+                  </span></label
               >
               <input
                 type="password"
@@ -88,9 +93,9 @@
             </div>
             <button type="submit" class="btn btn-success">Ingresar</button>
           </form>
-          <div class="row-1 border border-3 border-successs div__padre">
+          <div class="col-4  div__padre">
             <div class="col-4 div--hijo">
-              <div class="div--nieto"></div>
+              <div class="col-4  div--nieto"></div>
             </div>
           </div>
         </section>
