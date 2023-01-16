@@ -48,8 +48,8 @@ form.addEventListener("submit", (e) => {
     exampleCheck1: check.checked,
   };
 
-  if (!is.exampleInputEmail1 && !is.exampleInputPassword1 && !is.exampleCheck1) {
-    alert('no')
+  if (is.exampleInputEmail1 && is.exampleInputPassword1 && is.exampleCheck1) {
+    alert('no aceptado')
   }else{
     window.location.href = "./exer.html"
   }
