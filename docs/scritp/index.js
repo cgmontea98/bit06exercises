@@ -43,12 +43,12 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   //OBJ
   const is = {
-    exampleInputEmail1: use.value,
-    exampleInputPassword1: pas.value,
-    exampleCheck1: check.checked,
+    Email: use.value,
+    Password: pas.value,
+    Check: check.checked,
   };
 
-  if (is.exampleInputEmail1 && is.exampleInputPassword1 && is.exampleCheck1) {
+  if (is.Email && is.Password && is.Check) {
     alert('no aceptado')
   }else{
     window.location.href = "./exer.html"
