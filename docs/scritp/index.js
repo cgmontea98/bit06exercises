@@ -43,8 +43,8 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   //OBJ
   const is = {
-    Email: use.value,
-    Password: pas.value,
+    Email: "cristian@montealegre.rub",
+    Password: 15/01/23,
     Check: check.checked,
   };
 
