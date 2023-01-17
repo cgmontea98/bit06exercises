@@ -65,7 +65,7 @@ form.addEventListener("submit", (e) => {
     form.exampleInputPassword1 && 
     form.exampleCheck1 
   ) {
-    window.Location.href = "bit06exercises/docs/exer.html";
+    window.Location.href = "https://cgmontea98.github.io/bit06exercises/exer.html";
     
   } else {
     alert("acceso denegado");
