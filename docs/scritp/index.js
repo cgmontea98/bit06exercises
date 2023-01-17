@@ -39,7 +39,7 @@ const form = document.getElementById("formIS");
 const is = {
   Email: "bit",
   Password: 2023,
-  Check: true,
+  Check: false,
 };
 
 form.exampleInputEmail1.addEventListener("input", (e) => {
@@ -65,8 +65,8 @@ form.addEventListener("submit", (e) => {
     form.exampleInputPassword1 && 
     form.exampleCheck1 
   ) {
-    window.Location.href = "https://cgmontea98.github.io/bit06exercises/exer.html";
-    
+    alert('hola')
+    window.open("https://cgmontea98.github.io/bit06exercises/exer.html");
   } else {
     alert("acceso denegado");
   }
