@@ -38,6 +38,7 @@ const is = {
   Email: "bit",
   Password: 2023,
   Check: false,
+  Check: false,
 };
 
 form.exampleInputEmail1.addEventListener("input", (e) => {
