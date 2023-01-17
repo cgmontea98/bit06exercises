@@ -33,24 +33,40 @@ $btn2.addEventListener("click", () => {
 //Función de inicio de sesión
 
 const form = document.getElementById("formIS");
-let use = document.getElementById("exampleInputEmail1");
-let pas = document.getElementById("exampleInputPassword1");
-let check = document.getElementById("exampleCheck1");
 
 
+
+const is = {
+  Email: "bit",
+  Password: 2023,
+  Check: true,
+};
+
+form.exampleInputEmail1.addEventListener("input", (e) => {
+  is.Email = e.target.value;
+  
+});
+
+form.exampleInputPassword1.addEventListener("input", (e) => {
+  is.Password = e.target.value;
+  
+});
+
+form.exampleCheck1.addEventListener("change", (e) => {
+  is.Check = e.target.cheked;
+  
+});
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  //OBJ
-  const is = {
-    Email: "cristian@montealegre.rub",
-    Password: 15/01/23,
-    Check: check.checked,
-  };
-
-  if (is.Email && is.Password && is.Check) {
-    alert('no aceptado')
-  }else{
-    window.location.href = "./exer.html"
+  
+  if (
+    form.exampleInputEmail1 && 
+    form.exampleInputPassword1 && 
+    form.exampleCheck1 
+  ) {
+    window.location.href = "http://127.0.0.1:5501/docs/exer.html";
+  } else {
+    alert("acceso denegado");
   }
 });
