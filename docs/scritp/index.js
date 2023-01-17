@@ -34,39 +34,36 @@ $btn2.addEventListener("click", () => {
 
 const form = document.getElementById("formIS");
 
-
-
 const is = {
   Email: "bit",
   Password: 2023,
-  Check: true,
+  Check: false,
 };
 
 form.exampleInputEmail1.addEventListener("input", (e) => {
   is.Email = e.target.value;
-  
 });
-
 form.exampleInputPassword1.addEventListener("input", (e) => {
   is.Password = e.target.value;
-  
 });
-
 form.exampleCheck1.addEventListener("change", (e) => {
   is.Check = e.target.cheked;
-  
 });
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  
+
   if (
-    form.exampleInputEmail1 && 
-    form.exampleInputPassword1 && 
-    form.exampleCheck1 
+    form.exampleInputEmail1 &&
+    form.exampleInputPassword1 &&
+    form.exampleCheck1
   ) {
-    window.Location.href = "http://127.0.0.1:5501/docs/exer.html";
-    
+    alert("hola");
+    window.open(
+      "https://cgmontea98.github.io/bit06exercises/exer.html",
+      "ventana1",
+      "width=120px, height=300, scrollbars=NO"
+    );
   } else {
     alert("acceso denegado");
   }
