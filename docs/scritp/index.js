@@ -65,7 +65,7 @@ form.addEventListener("submit", (e) => {
     form.exampleInputPassword1 && 
     form.exampleCheck1 
   ) {
-    window.open("http://127.0.0.1:5501/docs/exer.html", '_self');
+    window.Location.href = "http://127.0.0.1:5501/docs/exer.html";
     
   } else {
     alert("acceso denegado");
