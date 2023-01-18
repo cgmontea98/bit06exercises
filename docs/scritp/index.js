@@ -10,7 +10,7 @@ $btn1.addEventListener("click", () => {
     $btn1.innerHTML = "Ocultar";
   } else {
     $form1.style.display = "none";
-    $btn1.innerHTML = "Iniciar sesión";
+    $btn1.innerHTML = "Inicie Sesión"
   }
 });
 
@@ -26,7 +26,7 @@ $btn2.addEventListener("click", () => {
     $btn2.innerHTML = "Ocultar";
   } else {
     $form2.style.display = "none";
-    $btn2.innerHTML = "Registro";
+    $btn2.innerHTML = "Registrese";
   }
 });
 
@@ -37,7 +37,6 @@ const form = document.getElementById("formIS");
 const is = {
   Email: "bit",
   Password: 2023,
-  Check: false,
   Check: false,
 };
 
@@ -62,8 +61,7 @@ form.addEventListener("submit", (e) => {
     alert("hola");
     window.open(
       "https://cgmontea98.github.io/bit06exercises/exer.html",
-      "ventana1",
-      "width=120px, height=300, scrollbars=NO"
+      "_blank"
     );
   } else {
     alert("acceso denegado");

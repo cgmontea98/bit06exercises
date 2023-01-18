@@ -5,7 +5,7 @@
   }
   
   body {
-    background-image: url(/docs/img/fondo\ pag\ web.png);
+    background-image: url(../img/fondo.png);
     width: 95%;
     max-width: 1440px;
     border-radius: 9px;
