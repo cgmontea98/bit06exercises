@@ -56,64 +56,38 @@ let resultado;
 const mas = document.getElementById("mas");
 mas.addEventListener("click", (eS) => {
   eS.preventDefault();
-
   resultado = Number(num1.value) + Number(num2.value);
-
   resOb.innerHTML = resultado;
 });
 
 const res = document.getElementById("res");
 res.addEventListener("click", (eR) => {
   eR.preventDefault();
-
   resultado = Number(num1.value) - Number(num2.value);
-
   resOb.innerHTML = resultado;
 });
 
 const mul = document.getElementById("mul");
 mul.addEventListener("click", (eM) => {
   eM.preventDefault();
-
   resOb.innerHTML = resultado;
-
   resultado = Number(num1.value) * Number(num2.value);
-
   resOb.innerHTML = resultado;
 });
 
 const vid = document.getElementById("vid");
 vid.addEventListener("click", (eV) => {
   eV.preventDefault();
-
   resultado = Number(num1.value) / Number(num2.value);
-
   resOb.innerHTML = resultado;
 });
 
 const mod = document.getElementById("mod");
 mod.addEventListener("click", (em) => {
   em.preventDefault();
-
   resultado = Number(num1.value) % Number(num2.value);
-
   resOb.innerHTML = resultado;
 });
-
-//Mostrar los resultados
-let resu = document.getElementById("resu");
-resu.addEventListener("click", alerta);
-function alerta(eRu) {
-  eRu.preventDefault();
-  alert(`El resultado de la operación es: ${resultado}`);
-}
-
-/*let resu = document.getElementById("resu");
-resu.addEventListener("click", (eRu) => {
-  eRu.preventDefault();
-  let imp = document.querySelector("resOb");
-  imp = resultado;
-}); */
 
 //Para ing num 3 a 17
 const btn = Array.from(document.getElementsByClassName("vmp"));
@@ -142,8 +116,6 @@ for (let i = 0; i < btn3.length; i++) {
       dis3.style.display = "block";
       //operación
       resultado = Number(numP.value) * 3;
-      //resultado
-      alert(`el resultado es ${resultado}`);
       //impresión en html
       let eje3 = document.getElementById("eje3");
       eje3.innerHTML = resultado;
@@ -162,8 +134,6 @@ for (let i = 0; i < btn4.length; i++) {
       dis4.style.display = "block";
       //operación
       resultado = Number(numP.value) / 2;
-      //resultado
-      alert(`el resultado es ${resultado}`);
       //impresión en html
       let eje4 = document.getElementById("eje4");
       eje4.innerHTML = resultado;
@@ -182,8 +152,6 @@ for (let i = 0; i < btn5.length; i++) {
       dis5.style.display = "block";
       //operación
       resultado = Number(numP.value) / 3;
-      //resultado
-      alert(`el resultado es ${resultado}`);
       //impresión en html
       let eje5 = document.getElementById("eje5");
       eje5.innerHTML = resultado;
@@ -202,8 +170,6 @@ for (let i = 0; i < btn6.length; i++) {
       dis6.style.display = "block";
       //operación
       resultado = Number(numP.value) - 5;
-      //resultado
-      alert(`el resultado es ${resultado}`);
       //impresión en html
       let eje6 = document.getElementById("eje6");
       eje6.innerHTML = resultado;
@@ -222,8 +188,6 @@ for (let i = 0; i < btn7.length; i++) {
       dis7.style.display = "block";
       //operación
       resultado = Number(numP.value) * Number(numP.value);
-      //resultado
-      alert(`el resultado es ${resultado}`);
       //impresión en html
       let eje7 = document.getElementById("eje7");
       eje7.innerHTML = resultado;
@@ -245,8 +209,6 @@ for (let i = 0; i < btn8.length; i++) {
         for (let i = 0; i <= numP.value; i++) {
           if (i % 2 === 0) {
             resultado += i + ", ";
-            //resultado
-            alert(`el resultado es ${resultado}`);
             //impresión en html
             let eje8 = document.getElementById("eje8");
             eje8.innerHTML = resultado;
@@ -270,11 +232,9 @@ for (let i = 0; i < btn9.length; i++) {
       //usando operador ternario
       Number(numP.value % 2 == 0)
         ? //SI ES TRUE
-          (alert(`el número ${Number(numP.value)} es PAR`),
-          (eje9.innerHTML = `el número ${Number(numP.value)} es PAR`))
+          (eje9.innerHTML = `el número ${Number(numP.value)} es PAR`)
         : // SI ES FALSE
-          (alert(`el número ${Number(numP.value)} es IMPAR`),
-          (eje9.innerHTML = `el número ${Number(numP.value)} es IMPAR`));
+          (eje9.innerHTML = `el número ${Number(numP.value)} es IMPAR`);
       /* op(); */
     } else {
       dis9.style.display = "none";
@@ -310,11 +270,9 @@ for (let i = 0; i < btn10.length; i++) {
       dis10.style.display = "block";
       //operación
       Number(numP.value < 0)
-        ? (alert(`El número ${Number(numP.value)} es NEGATIVO`),
-          (eje10 = document.getElementById("eje10")),
+        ? ((eje10 = document.getElementById("eje10")),
           (eje10.innerHTML = `El número ${Number(numP.value)} es NEGATIVO`))
-        : (alert(`El número ${Number(numP.value)} es POSITIVO`),
-          (eje10.innerHTML = `El número ${Number(numP.value)} es POSITIVO`));
+        : (eje10.innerHTML = `El número ${Number(numP.value)} es POSITIVO`);
     } else {
       dis10.style.display = "none";
     }
@@ -333,16 +291,14 @@ for (let i = 0; i < btn11.length; i++) {
       let btnDb = document.getElementById("db");
       btnDb.addEventListener("mouseover", () => {
         resultado = Number(numP.value) * 2;
-        alert(`el resultado es ${resultado}`);
         let eje11 = document.getElementById("eje11");
-        eje11.innerHTML = `el resultado es ${resultado}`;
+        eje11.innerHTML = `el doble es ${resultado}`;
 
         let btnCd = document.getElementById("cd");
         btnCd.addEventListener("mousedown", () => {
           resultado = Number(numP.value) * 4;
-          alert(`el resultado es ${resultado}`);
           let eje111 = document.getElementById("eje11--1");
-          eje111.innerHTML = `el resultado es ${resultado}`;
+          eje111.innerHTML = `el cuádruple es ${resultado}`;
         });
       });
     } else {
@@ -360,8 +316,6 @@ for (let i = 0; i < btn12.length; i++) {
       dis12.style.display = "block";
       //operación
       resultado = "pte";
-      //resultado
-      alert(`el resultado es ${resultado}`);
       //impresión en html
       let eje12 = document.getElementById("eje12");
       eje12.innerHTML = resultado;
@@ -380,8 +334,6 @@ for (let i = 0; i < btn13.length; i++) {
       dis13.style.display = "block";
       //operación
       resultado = "pte";
-      //resultado
-      alert(`el resultado es ${resultado}`);
       //impresión en html
       let eje13 = document.getElementById("eje13");
       eje13.innerHTML = resultado;
@@ -405,9 +357,6 @@ for (let i = 0; i < btn14.length; i++) {
           console.log(resultado);
         }
       }
-      //resultado
-      console.log(Number(numP.value));
-      alert(`el resultado es ${resultado}`);
       //impresión en html
       let eje14 = document.getElementById("eje14");
       eje14.innerHTML = resultado;
@@ -426,8 +375,6 @@ for (let i = 0; i < btn15.length; i++) {
       dis15.style.display = "block";
       //operación
       resultado = "pte";
-      //resultado
-      alert(`el resultado es ${resultado}`);
       //impresión en html
       let eje15 = document.getElementById("eje15");
       eje15.innerHTML = resultado;
@@ -446,8 +393,6 @@ for (let i = 0; i < btn16.length; i++) {
       dis16.style.display = "block";
       //operación
       resultado = "pte";
-      //resultado
-      alert(`el resultado es ${resultado}`);
       //impresión en html
       let eje16 = document.getElementById("eje16");
       eje16.innerHTML = resultado;
@@ -485,14 +430,15 @@ for (let i = 0; i < btn17_1.length; i++) {
       eje17.innerHTML = `El número ${Number(
         numP.value
       )} no es divisible por ${Number(numD.value)}`;
-    }else  if (Number(numP.value) % Number(numd.value) === 0){
+    } else if (Number(numP.value) % Number(numd.value) === 0) {
       alert(
         `El número ${Number(numP.value)} si es divisible por ${Number(
           numD.value
         )}`
       );
       eje17.innerHTML = `El número ${Number(
-        numP.value)} si es divisible por ${Number(numD.value)}`;
+        numP.value
+      )} si es divisible por ${Number(numD.value)}`;
     }
   });
 }

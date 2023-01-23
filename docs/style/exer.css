@@ -64,6 +64,11 @@
     place-content: center;
     gap: 15px;
   }
+  .cajaR--indv{
+    background-color: rgba(98, 146, 197, 0.542);
+    border: 2px solid rgb(97, 90, 215);
+    border-radius: 2em;
+  }
   .opb--srmd,
   .opb--exp,
   .article--cajaR {
@@ -76,8 +81,8 @@
   }
   
   div .resultado {
-    background-color: rgba(165, 42, 42, 0.322);
-    color: blue;
+    font-weight: 800;
+    color: rgb(224, 128, 39);
   }
   
   @media screen and (min-width: 586px) and (max-width: 768px) {
