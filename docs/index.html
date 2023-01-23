@@ -18,7 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <!--Propio-->
     <link rel="stylesheet" href="./style/index.css" />
   </head>
@@ -47,7 +50,13 @@
           </button>
         </div>
       </nav>
-
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 px-5 mx-5 div__padre">
+            <div class="col-12 px-5 mx-5 div--hijo"></div>
+          </div>
+        </div>
+      </div>
       <main class="container py-2 my-2">
         <!--L.I-->
         <section
@@ -55,12 +64,12 @@
           id="is"
         >
           <h2>Inicie Sesión</h2>
-          <form id="formIS" class="col-md-6 col-6">
+          <form id="formIS">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label"
                 ><span class="material-symbols-outlined">
                   account_circle
-                  </span></label
+                </span></label
               >
               <input
                 type="text"
@@ -71,9 +80,7 @@
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label"
-                ><span class="material-symbols-outlined">
-                  key
-                  </span></label
+                ><span class="material-symbols-outlined"> key </span></label
               >
               <input
                 type="password"
@@ -81,23 +88,9 @@
                 id="exampleInputPassword1"
               />
             </div>
-            <div class="form-check d-inline-flex">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="exampleCheck1"
-              />
-              <label class="form-check-label mx-3" for="exampleCheck1"
-                >Soy yo</label
-              >
-            </div>
+
             <button type="submit" class="btn btn-success">Ingresar</button>
           </form>
-          <div class="col-4  div__padre">
-            <div class="col-4 div--hijo">
-              <div class="col-4  div--nieto"></div>
-            </div>
-          </div>
         </section>
 
         <!--Rg-->
@@ -162,5 +155,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./scritp/index.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

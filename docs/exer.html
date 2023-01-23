@@ -3,7 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicios</title>
+    <meta
+      name="keywords"
+      content="Ejercicios matematicas operaciones sumar restar divir"
+    />
+    <meta
+      name="description"
+      content="Página para realizar diversos ejercicios matemáticos"
+    />
+    <link
+      rel="shortcut icon"
+      href="../docs/img/favicon.ico"
+      type="image/x-icon"
+    />
     <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +25,7 @@
     />
     <!--Prop-->
     <link rel="stylesheet" href="./style/exer.css" />
+    <title>Ejercicios</title>
   </head>
   <body>
     <header>
@@ -23,7 +36,6 @@
         botón, haga un o dos click...
       </p>
     </header>
-
     <main class="main">
       <section class="main__section">
         <!--Ejer1-->
@@ -44,7 +56,6 @@
             <button type="submit" id="listo">Listo</button>
           </form>
         </article>
-
         <!--OpeBásicas-->
         <article class="section__article article--uno">
           <h2>2. Operaciones básicas</h2>
@@ -68,13 +79,12 @@
                 <button id="mod">Módulo de la división(%)</button>
               </div>
               <div>
-              <span>El resultado es</span>
-              <div id="resOb" class="resultado" readonly="readonly"></div>
-            </div>
+                <span>El resultado es</span>
+                <div id="resOb" class="resultado"></div>
+              </div>
             </form>
           </div>
         </article>
-
         <!--Num para 3 a 17-->
         <article class="section__article article--uno">
           <h2>Ingrese un número para las operaciones del 3 al 17</h2>
@@ -84,7 +94,6 @@
             <input type="number" id="numO" />
           </div>
         </article>
-
         <!--Ejercicios 3 al 17-->
         <div class="section__modifxl">
           <article class="section__article cajaR--indv">
@@ -92,12 +101,7 @@
             <button class="vm3">Ver más</button>
             <div class="article--cajaR res--3">
               <label>El resultado de la operación seleccionada es:</label>
-              <div
-                type="number"
-                class="resultado"
-                id="eje3"
-                readonly="readonly"
-              ></div>
+              <div class="resultado" id="eje3"></div>
             </div>
           </article>
           <article class="section__article cajaR--indv">
@@ -105,12 +109,7 @@
             <button class="vm4">Ver más</button>
             <div class="article--cajaR res--4">
               <label>El resultado de la operación seleccionada es:</label>
-              <div
-                type="number"
-                class="resultado"
-                id="eje4"
-                readonly="readonly"
-              ></div>
+              <div class="resultado" id="eje4"></div>
             </div>
           </article>
           <article class="section__article cajaR--indv">
@@ -118,12 +117,7 @@
             <button class="vm5">Ver más</button>
             <div class="article--cajaR res--5">
               <label>El resultado de la operación seleccionada es:</label>
-              <div
-                type="number"
-                class="resultado"
-                id="eje5"
-                readonly="readonly"
-              ></div>
+              <div class="resultado" id="eje5"></div>
             </div>
           </article>
           <article class="section__article cajaR--indv">
@@ -131,12 +125,7 @@
             <button class="vm6">ver más</button>
             <div class="article--cajaR res--6">
               <label>El resultado de la operación seleccionada es:</label>
-              <div
-                type="number"
-                class="resultado"
-                id="eje6"
-                readonly="readonly"
-              ></div>
+              <div class="resultado" id="eje6"></div>
             </div>
           </article>
           <article class="section__article cajaR--indv">
@@ -144,12 +133,7 @@
             <button class="vm7">Ver más</button>
             <div class="article--cajaR res--7">
               <label>El resultado de la operación seleccionada es:</label>
-              <div
-                type="number"
-                class="resultado"
-                id="eje7"
-                readonly="readonly"
-              ></div>
+              <div class="resultado" id="eje7"></div>
             </div>
           </article>
           <article class="section__article cajaR--indv">
@@ -157,12 +141,7 @@
             <button class="vm8">Ver más</button>
             <div class="article--cajaR res--8">
               <label>El resultado de la operación seleccionada es:</label>
-              <div
-                type="number"
-                class="resultado"
-                id="eje8"
-                readonly="readonly"
-              ></div>
+              <div class="resultado" id="eje8"></div>
             </div>
           </article>
           <article class="section__article cajaR--indv">
@@ -170,12 +149,7 @@
             <button class="vm9">Ver más</button>
             <div class="article--cajaR res--9">
               <label>El resultado de la operación seleccionada es:</label>
-              <div
-                type="number"
-                class="resultado"
-                id="eje9"
-                readonly="readonly"
-              ></div>
+              <div class="resultado" id="eje9"></div>
             </div>
           </article>
           <article class="section__article cajaR--indv">
@@ -183,12 +157,7 @@
             <button class="vm10">Ver más</button>
             <div class="article--cajaR res--10">
               <label>El resultado de la operación seleccionada es:</label>
-              <div
-                type="number"
-                class="resultado"
-                id="eje10"
-                readonly="readonly"
-              ></div>
+              <div class="resultado" id="eje10"></div>
             </div>
           </article>
           <article class="section__article cajaR--indv">
@@ -199,18 +168,8 @@
               <button id="cd">CUADRUPLE</button>
               <div>
                 <label>El resultado de la operación seleccionada es:</label>
-                <div
-                  type="number"
-                  class="resultado"
-                  id="eje11"
-                  readonly="readonly"
-                ></div>
-                <div
-                  type="number"
-                  class="resultado"
-                  id="eje11--1"
-                  readonly="readonly"
-                ></div>
+                <div class="resultado" id="eje11"></div>
+                <div class="resultado" id="eje11--1"></div>
               </div>
             </div>
           </article>
@@ -219,12 +178,7 @@
             <button class="vm12">Ver más</button>
             <div class="article--cajaR res--12">
               <label>El resultado de la operación seleccionada es:</label>
-              <div
-                type="number"
-                class="resultado"
-                id="eje12"
-                readonly="readonly"
-              ></div>
+              <div class="resultado" id="eje12"></div>
             </div>
           </article>
           <article class="section__article cajaR--indv">
@@ -232,12 +186,7 @@
             <button class="vm13">Ver más</button>
             <div class="article--cajaR res--13">
               <label>El resultado de la operación seleccionada es:</label>
-              <div
-                type="number"
-                class="resultado"
-                id="eje13"
-                readonly="readonly"
-              ></div>
+              <div class="resultado" id="eje13"></div>
             </div>
           </article>
           <article class="section__article cajaR--indv">
@@ -245,12 +194,7 @@
             <button class="vm14">Ver más</button>
             <div class="article--cajaR res--14">
               <label>El resultado de la operación seleccionada es:</label>
-              <div
-                type="number"
-                class="resultado"
-                id="eje14"
-                readonly="readonly"
-              ></div>
+              <div class="resultado" id="eje14"></div>
             </div>
           </article>
           <article class="section__article cajaR--indv">
@@ -258,12 +202,7 @@
             <button class="vm15">Ver más</button>
             <div class="article--cajaR res--15">
               <label>El resultado de la operación seleccionada es:</label>
-              <div
-                type="number"
-                class="resultado"
-                id="eje15"
-                readonly="readonly"
-              ></div>
+              <div class="resultado" id="eje15"></div>
             </div>
           </article>
           <article class="section__article cajaR--indv">
@@ -271,12 +210,7 @@
             <button class="vm16">Ver más</button>
             <div class="article--cajaR res--16">
               <label>El resultado de la operación seleccionada es:</label>
-              <div
-                type="number"
-                class="resultado"
-                id="eje16"
-                readonly="readonly"
-              ></div>
+              <div class="resultado" id="eje16"></div>
             </div>
           </article>
           <article class="section__article cajaR--indv article--total">
@@ -290,21 +224,16 @@
               <button class="vm17">
                 El resultado de la operación seleccionada es:
               </button>
-              <div
-                type="number"
-                class="resultado"
-                id="eje17"
-                readonly="readonly"
-              ></div>
+              <div class="resultado" id="eje17"></div>
             </div>
           </article>
         </div>
       </section>
     </main>
-
     <footer>
       <button class="sub"></button>
     </footer>
     <script src="./scritp/exer.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

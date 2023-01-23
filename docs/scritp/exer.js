@@ -9,9 +9,17 @@ function hola(e) {
   let ape = document.getElementById("ape").value;
   let ed = document.getElementById("ed").value;
   if (ed >= 18) {
-    alert(`Bienvenido ${nom} ${ape}, su edad es ${ed} por lo tanto es mayor`);
+    Swal.fire({
+      title: "Bienvenido",
+      text: ` ${nom} ${ape}, su edad es ${ed} por lo tanto es mayor`,
+      confirmButtonText: "Cool",
+    });
   } else {
-    alert(`Bienvenido ${nom} ${ape}, su edad es ${ed} por lo tanto es menor`);
+    Swal.fire({
+      title: "Bienvenido",
+      text: ` ${nom} ${ape}, su edad es ${ed} por lo tanto es menor`,
+      confirmButtonText: "Cool",
+    });
   }
 }
 
@@ -35,7 +43,7 @@ let num1 = document.getElementById("num1");
 let num2 = document.getElementById("num2");
 
 //Variable general para los resultados
-let resultado;
+let resultado = 0;
 
 //Botones
 const mas = document.getElementById("mas");
@@ -191,9 +199,10 @@ for (let i = 0; i < btn8.length; i++) {
       dis8.style.display = "block";
       //operación
       function multiplos() {
-        for (let i = 0; i <= numP.value; i++) {
-          if (i % 2 === 0) {
-            resultado += i + ", ";
+        for (let i = 0; i <= Number(numP.value); i++) {
+          if (i % 2 == 0) {
+            resultado = resultado + i + ", ";
+            console.log(resultado);
             //impresión en html
             let eje8 = document.getElementById("eje8");
             eje8.innerHTML = resultado;
@@ -300,8 +309,9 @@ for (let i = 0; i < btn12.length; i++) {
     if (mos12 === "none") {
       dis12.style.display = "block";
       //operación
-      resultado = "pte";
-      //impresión en html
+      for (let i = 0; i <= Number(numP.value); i++) {
+        resultado += i;
+      }
       let eje12 = document.getElementById("eje12");
       eje12.innerHTML = resultado;
     } else {
@@ -318,7 +328,9 @@ for (let i = 0; i < btn13.length; i++) {
     if (mos13 === "none") {
       dis13.style.display = "block";
       //operación
-      resultado = "pte";
+      for (let i = 0; i <= Number(numP.value); i++) {
+        i % 2 === 0 ? (resultado += i) : false;
+      }
       //impresión en html
       let eje13 = document.getElementById("eje13");
       eje13.innerHTML = resultado;
@@ -338,8 +350,7 @@ for (let i = 0; i < btn14.length; i++) {
       //operación
       for (let i = 1; i < Number(numP.value); i++) {
         if (i % 2 !== 0) {
-          Number((resultado = resultado + i));
-          console.log(resultado);
+          resultado = resultado + i;
         }
       }
       //impresión en html
@@ -359,7 +370,15 @@ for (let i = 0; i < btn15.length; i++) {
     if (mos15 === "none") {
       dis15.style.display = "block";
       //operación
-      resultado = "pte";
+      for (let i = 0; i <= Number(numP.value); i++) {
+        if (i % 2 !== 0) {
+          resultado = resultado + i + ", ";
+          console.log(resultado);
+          //impresión en html
+          let eje8 = document.getElementById("eje8");
+          eje8.innerHTML = resultado;
+        }
+      }
       //impresión en html
       let eje15 = document.getElementById("eje15");
       eje15.innerHTML = resultado;
@@ -377,10 +396,17 @@ for (let i = 0; i < btn16.length; i++) {
     if (mos16 === "none") {
       dis16.style.display = "block";
       //operación
-      resultado = "pte";
-      //impresión en html
-      let eje16 = document.getElementById("eje16");
-      eje16.innerHTML = resultado;
+      let resultado1 = [];
+      for (let i = Number(numP.value); i >= 0; i--) {
+        resultado1.push(i);
+        //impresión en html
+        resultado1.forEach((element) => {
+          if (element > 0) {
+            let eje16 = document.getElementById("eje16");
+            eje16.innerHTML = resultado;
+          }
+        });
+      }
     } else {
       dis16.style.display = "none";
     }
