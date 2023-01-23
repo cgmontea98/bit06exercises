@@ -22,28 +22,13 @@ for (let i = 0; i < btn1.length; i++) {
   btn1[i].addEventListener("click", () => {
     let dis1 = document.querySelector(".opb--srmd");
     let mos1 = dis1.style.display;
-    if (mos1 === "none") {
+    if (mos1 === "") {
       dis1.style.display = "block";
     } else {
-      dis1.style.display = "block";
+      dis1.style.display = "";
     }
   });
 }
-
-function mostrar() {
-  let opbas = document.querySelector(".opb--srmd");
-  opbas.addEventListener("click", () => {
-    let oper = document.querySelector(".opb--hacer");
-    let op = oper.style.display;
-
-    if (op === "") {
-      oper.style.display = "block";
-    } else {
-      oper.style.display = "";
-    }
-  });
-}
-mostrar();
 
 //Num para operaciones básicas
 let num1 = document.getElementById("num1");
@@ -421,21 +406,11 @@ for (let i = 0; i < btn17_1.length; i++) {
   btn17_1[i].addEventListener("click", () => {
     let numd = document.getElementById("numD");
     if (Number(numP.value) % Number(numd.value) !== 0) {
-      alert(
-        `El número ${Number(numP.value)} no es divisible por ${Number(
-          numD.value
-        )}`
-      );
       let eje17 = document.getElementById("eje17");
       eje17.innerHTML = `El número ${Number(
         numP.value
       )} no es divisible por ${Number(numD.value)}`;
     } else if (Number(numP.value) % Number(numd.value) === 0) {
-      alert(
-        `El número ${Number(numP.value)} si es divisible por ${Number(
-          numD.value
-        )}`
-      );
       eje17.innerHTML = `El número ${Number(
         numP.value
       )} si es divisible por ${Number(numD.value)}`;
